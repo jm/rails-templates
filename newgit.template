@@ -14,9 +14,18 @@ run("find . \\( -type d -empty \\) -and \\( -not -regex ./\\.git.* \\) -exec tou
 # git:rails:new_app
 git :init
 
-["log/\\*.log", "log/\\*.pid", "db/\\*.db", "db/\\*.sqlite3", "db/schema.rb", "tmp/\\*\\*/\\*", ".DS_Store", "doc/api", "doc/app", "config/database.yml"].each do |entry|
-  system("echo #{entry} >> .gitignore")
-end
+initializer '.gitignore', <<-CODE
+log/\\*.log
+log/\\*.pid
+db/\\*.db
+db/\\*.sqlite3
+db/schema.rb
+tmp/\\*\\*/\\*
+.DS_Store
+doc/api
+doc/app
+config/database.yml
+CODE
 
 run "cp config/database.yml config/database.yml.sample"
 
