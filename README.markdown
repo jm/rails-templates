@@ -10,3 +10,4 @@ Current library
 * bort by Jeremy McAnally, improved by Pratik Naik (based on bort template by Jim Neath)
 * daring by Peter Cooper
 * suspenders by Nathan Esquenazi (based on Suspenders template by Thoughtbot)
+* newgit by Joao Vitor

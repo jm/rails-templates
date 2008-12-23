@@ -1,3 +1,6 @@
+# newgit.rb
+# from Joao Vitor
+
 # Creates a new rails application using git
 # Initializes the git based on the sake task published on
 # http://gist.github.com/6750
