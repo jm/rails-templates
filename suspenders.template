@@ -1,5 +1,6 @@
-# suspenders.rb
+# suspenders.template
 # from Nathan Esquenazi
+# based on Suspenders by Thoughtbot
 
 #====================
 # PLUGINS
