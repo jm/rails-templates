@@ -1,4 +1,4 @@
-# daring.template
+# daring.rb
 # from Peter Cooper
 
 # Link to local copy of edge rails

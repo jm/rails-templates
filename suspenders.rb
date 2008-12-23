@@ -1,4 +1,4 @@
-# suspenders.template
+# suspenders.rb
 # from Nathan Esquenazi
 # based on Suspenders by Thoughtbot
 

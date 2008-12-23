@@ -1,4 +1,4 @@
-# newgit.template
+# newgit.rb
 # from Joao Vitor
 
 # Creates a new rails application using git

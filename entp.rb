@@ -1,4 +1,4 @@
-# entp.template
+# entp.rb
 # from Jeremy McAnally
 
 plugin 'rspec', :git => 'git://github.com/dchelimsky/rspec.git'

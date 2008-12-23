@@ -1,4 +1,4 @@
-# bort.template
+# bort.rb
 # from Jeremy McAnally, Pratik Naik
 # based on bort by Jim Neath
 
