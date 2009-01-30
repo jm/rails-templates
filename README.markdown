@@ -12,3 +12,4 @@ Current library
 * suspenders by Nathan Esquenazi (based on Suspenders template by Thoughtbot)
 * newgit by Joao Vitor
 * facebook by Mark Daggett
+* sethbc by Seth Chandler
