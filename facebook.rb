@@ -1,5 +1,7 @@
 # Facebook Skeleton App
 # from Mark Daggett (http://www.locusfoc.us)
+canvas_name = ask("What is your Facebook application's canvas name?")
+
 
 # Plugins
 plugin 'rspec',              :git => 'git://github.com/dchelimsky/rspec.git'
@@ -187,7 +189,6 @@ file 'app/controllers/accounts_controller.rb',
   # GET /show/1
   # GET /show/1.fbml
   def show
-    @index = 0
     respond_to do |format|
       format.fbml {} # show.fbml
     end
@@ -846,7 +847,7 @@ route "map.about '/about', :controller => 'facebook', :action => 'about'"
 # Post-Authorize URL
 # http://apps.facebook.com/FACEBOOK_APP_NAME/authorized
 route "map.authorized '/authorized', :controller => 'facebook', :action => 'authorized'"
-route "map.bp_authorized '/FACEBOOK_APP_NAME/authorized', :controller => 'facebook', :action => 'authorized'"
+route "map.bp_authorized '/#{canvas_name}/authorized', :controller => 'facebook', :action => 'authorized'"
 
 # Post-Authorize Redirect URL
 # http://apps.facebook.com/FACEBOOK_APP_NAME/authorize_redirect
