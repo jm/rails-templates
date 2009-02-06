@@ -484,6 +484,14 @@ file 'app/views/layouts/application.fbml.erb',
   <%= render_facebook_flash() %>
   
   <%= yield %>
+  <script type="text/javascript" charset="utf-8">
+
+    // Give JS access to the canvas page name;
+    CANVAS_PAGE_NAME= '<%= ENV["FACEBOOKER_RELATIVE_URL_ROOT"] %>';
+    REMOTE_HOST = '<%= url_for :controller => "/facebook", :only_path => false, :canvas => false %>';
+
+  </script>
+  <%= javascript_tag "AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
 
   <%= content_tag :script, File.readlines("public/javascripts/application.js").join("\n") %>
 }
