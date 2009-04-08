@@ -7,10 +7,10 @@ inside(ENV['RAILS_ROOT']) do
   run 'jruby -S warble config'
 end
 
-rake 'rails:freeze:edge RELEASE=2.3.2'
+freeze! 'RELEASE=2.3.2'
 run 'rm -rf vendor/rails/activerecord'
 %w(actionmailer actionpack activeresource activesupport railties).each do |gem|
-  run "rm -rf vendor/rails/#{gem}/test"
+  run %Q{rm -rf vendor/rails/#{gem}/test}
 end
 
 inside('lib') do
@@ -51,12 +51,10 @@ inside('lib') do
   
 end
 
-app_name = ask("What's the name of your application?")
-
 file 'appengine-web.xml',
 %Q{<?xml version="1.0" encoding="utf-8"?>
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
-  <application>#{app_name}</application>
+  <application>#{root.split('/').last}</application>
   <version>2</version>
   <static-files />
   <resource-files />
