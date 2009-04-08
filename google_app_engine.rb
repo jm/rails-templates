@@ -43,7 +43,8 @@ inside('lib') do
   # cd ..
   # rm -rf jruby-core
   # rm -rf tmp_unpack
-  # rm -rf jruby-complete.jar'
+  # rm -rf jruby-complete.jar
+  # rm -rf jruby'
   
   # GET THE DEVELOPMENT VERSION OF JRUBY-RACK
   #run 'git clone git://github.com/nicksieger/jruby-rack.git'
