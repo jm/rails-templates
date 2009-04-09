@@ -2,10 +2,8 @@
 
 run 'jruby -S gem install warbler'
 
-inside(ENV['RAILS_ROOT']) do
-  run 'jruby -S warble pluginize'
-  run 'jruby -S warble config'
-end
+run 'jruby -S warble pluginize'
+run 'jruby -S warble config'
 
 freeze! 'RELEASE=2.3.2'
 run 'rm -rf vendor/rails/activerecord'
