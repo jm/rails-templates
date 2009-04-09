@@ -13,3 +13,4 @@ Current library
 * newgit by Joao Vitor
 * facebook by Mark Daggett
 * sethbc by Seth Chandler
+* google\_app\_engine by David Calavera
