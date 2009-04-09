@@ -1,6 +1,6 @@
 #Google App Engine template
 
-run 'jruby -S gem install warbler'
+run 'jruby -S gem install warbler' if yes?('Install warbler gem?')
 
 run 'jruby -S warble pluginize'
 run 'jruby -S warble config'
